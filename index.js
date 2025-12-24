@@ -4,7 +4,7 @@ const server = http.createServer((req, res) => {
   // Verificamos que el path sea exactamente la raíz "/"
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end(JSON.stringify({ mensaje: "Hola Mundo!" }));
+    res.end(JSON.stringify({ mensaje: "Home" }));
   }
 
   if (req.url === '/status') {
