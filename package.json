@@ -1,0 +1,13 @@
+{
+  "name": "nodedocker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "build": "docker build -t nodedocker:latest ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
