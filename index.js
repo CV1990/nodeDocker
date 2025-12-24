@@ -2,6 +2,11 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   // Verificamos que el path sea exactamente la raíz "/"
+  if (req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end(JSON.stringify({ mensaje: "Hola Mundo!" }));
+  }
+
   if (req.url === '/status') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end(JSON.stringify({ status: 200, mensaje: "Ok" }));
